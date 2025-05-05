@@ -7,7 +7,8 @@
 
 .trending-img {
     width: 100%;
-    margin: 3rem 0px auto;
+    margin: 2rem 0px auto;
+    object-fit: cover;
 }
 
 .title {
@@ -49,7 +50,25 @@ hr {
 
 .card-container {
     display: flex;
-    justify-content: space-evenly;
-    gap: 2%;
-    margin: 2%;
-}
+    flex-wrap: wrap;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+@media (max-width: 768px) {
+    .title {
+      font-size: 3rem;
+    }
+
+    .overlay-text {
+      font-size: 1rem;
+    }
+  
+    .overlay-btn {
+      transform: scale(1);
+    }
+  }
