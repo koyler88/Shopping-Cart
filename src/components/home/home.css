@@ -1,0 +1,55 @@
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trending-img {
+    width: 100%;
+    margin: 3rem 0px auto;
+}
+
+.title {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    font-size: 4rem;
+    width: 40%;
+    color: #556B2F;
+}
+
+.overlay-text {
+    position: absolute;
+    left: 8%;
+    top: 55%;
+    color: white;
+    font-size: 1.5rem;
+    width: 40%;
+}
+
+.overlay-btn {
+    position: absolute;
+    left: 11%;
+    top: 75%;
+    transform: scale(1.5);
+}
+
+hr {
+    width: 10%;
+    height: 3px;
+    background-color: #556B2F;
+    border: none;
+}
+
+.category-title {
+    margin: 2% auto;
+    font-size: 2rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2%;
+    margin: 2%;
+}

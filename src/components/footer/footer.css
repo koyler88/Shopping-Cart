@@ -1,0 +1,16 @@
+footer {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    justify-content: space-between;
+    background-color: rgb(58, 57, 57);
+    color: white;
+    height: 8%;
+    align-items: center;
+}
+
+h4 {
+    padding: 0 15px;
+}

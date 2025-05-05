@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 13rem;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.category-img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.overlay-category-text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    color: green;
+    font-size: 1.4rem;
+}
+
