@@ -1,8 +1,8 @@
 import './category-card.css'
 
-function CategoryCard({src, category}) {
+function CategoryCard({src, category, onClick, value}) {
     return (
-        <div className="container">
+        <div onClick={onClick} data-value={value} className="container">
             <div className="image-container">
                 <img className="category-img" src={src} alt=""/>
                 <p className="overlay-category-text">{category}</p>

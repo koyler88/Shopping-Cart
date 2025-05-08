@@ -1,32 +1,23 @@
-import { useEffect } from "react";
 import "./nav.css";
 
-function Nav({cartCount}) {
-  cartCount = 3;
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((response) => response.json())
-      .then((data) => data.forEach(element => {
-        console.log(element.category)
-      }));
-  });
+function Nav({cartCount, onClick}) {
 
   return (
     <div className="nav-container">
       <div className="head-nav">
-        <h1>X-Cite Apparel</h1>
+        <h1>Calm Apparel</h1>
         <div className="links">
-          <button>Home</button>
-          <button>Shop</button>
-          <button className="flex">Cart<p className="count">{cartCount}</p></button>
+          <button onClick={onClick} data-value="home">Home</button>
+          <button onClick={onClick} data-value="all">Shop</button>
+          <button onClick={onClick} data-value="cart" className="flex">Cart<p className="count">{cartCount}</p></button>
         </div>
       </div>
       <div className="category links">
-        <button>All</button>
-        <button>Mens</button>
-        <button>Womens</button>
-        <button>Jewelery</button>
-        <button>Electronics</button>
+        <button onClick={onClick} data-value="all">All</button>
+        <button onClick={onClick} data-value="mens">Mens</button>
+        <button onClick={onClick} data-value="womens">Womens</button>
+        <button onClick={onClick} data-value="jewelery">Jewelery</button>
+        <button onClick={onClick} data-value="electronics">Electronics</button>
       </div>
     </div>
   );

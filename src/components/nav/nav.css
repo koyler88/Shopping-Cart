@@ -53,7 +53,7 @@ button {
 
 button:hover {
   box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2),
-    0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(49, 60, 182, 0.5);
+    0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px white;
   outline: 0;
   cursor: pointer;
 }
